@@ -1,9 +1,138 @@
 /* universal styles */
+html {
+  font-size: 18px;
+}
 
+body {
+  font-family: "Helvetica", sans-serif;
+}
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
 
+/* keep divs outlined while working
+div {
+  border: 1px solid black;
+} */
+
+/* logo header section */
+.logo {
+  background-color: black;
+  color: white;
+  padding: 0.66rem 0.5rem;
+}
+
+.logo .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
 /* main banner section */
 
-.main-banner {
-  background-image: url("../images/moto.jpg");
+ .main-banner {
+  height: 25rem;
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 9rem;
+}
+
+.main-banner .container {
+  width: 20rem;
+  background-color: black;
+  color: white;
+  position: relative;
+
+}
+
+.headline {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+
+.headline h1{
+  font-size: 2rem;
+  padding-top: 0.25rem;
+}
+
+/* navigation section */
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0.75em 0;
+}
+/*products section */
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+
+.product {
+  border: 4px solid black;
+  padding: 2rem 0;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img {
+  max-width: 8rem;
+}
+
+.product span {
+  background-color: black;
+  color: white;
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  }
+
+/* location and hours section*/
+.business-info {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+  background-color: black;
+  color: white;
+  display: block;
+  padding: 1rem 0 1rem 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/*footer section */
+footer {
+  height: 5rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
