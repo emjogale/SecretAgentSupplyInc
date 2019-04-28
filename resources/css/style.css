@@ -70,6 +70,10 @@ nav ul {
   justify-content: space-between;
   padding: 0.75em 0;
 }
+
+.mobile-nav {
+  display: none;
+}
 /*products section */
 .products {
   display: flex;
@@ -78,13 +82,6 @@ nav ul {
 }
 
 .product {
-/*  border: 4px solid black;
-  padding: 2rem 0;
-  height: 9rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center; */
   width: 30%;
 }
 
@@ -106,7 +103,6 @@ nav ul {
   display: block;
   padding: 0.5rem;
   text-align: center;
-  
   }
 
 /* location and hours section*/
@@ -146,8 +142,62 @@ footer .container {
 
 /* media queries */
 @media only screen and (max-width: 1024px) {
-  .headline {
-    font-weight: normal;
-    color: red;
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+
+.headline {
+  width: 100%;
+  padding: 1rem 2rem;
+  top: 10rem;
+}
+
+.headline h4 {
+  font-size: .77rem;
+}
+
+.headline h1{
+  font-size: 1rem;
+}
+  .products,
+  .business-info {
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin: auto;
+  }
+
+  footer {
+    text-align: center;
   }
 }
