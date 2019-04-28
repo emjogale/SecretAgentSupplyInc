@@ -8,7 +8,8 @@ body {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 100%;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -161,6 +162,7 @@ footer .container {
 }
 
 @media only screen and (max-width: 470px) {
+
   .main-banner {
     height: 15rem;
   }
